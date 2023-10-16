@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    background: rgb(241, 208, 195);
   }
-  to {
-    transform: rotate(360deg);
+  .box {
+    margin: auto;
+    margin-top: 75px;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    width: 398px;
+    min-height: 495px;
+    background:rgb(211, 242, 242)
   }
-}
+  
+.title {
+    margin: 40px;
+    color: coral;
+    font-size: 30px;
+    text-align:center;
+  }
+  
+  .complete {
+    opacity: 0.6;
+  }
+ 
+  .todoInput {
+    padding: 16px;
+    border:none;
+    border-radius: 10px;
+    outline: none;
+    width: 320px;
+    background: white;
+    color:rgb(78, 99, 121);
+  }
+  
+  .todoInput::placeholder {
+    color: #8aa1a8;
+  }
+  
+  .addButton {
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:rgb(127, 203, 217);
+    color: white;
+  }
+  .box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .todo-row {
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px;
+    color: white;
+    background-color:coral;
+    padding: 14px;
+    border-radius: 10px;
+    width: 99%;
+  }
+
+  .icons {
+    font-size: medium;
+    cursor: pointer;
+    color: white;
+  }
+  .edit{
+    margin-left: 4px;
+  }
+ 
